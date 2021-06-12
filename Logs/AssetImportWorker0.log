@@ -172,3 +172,96 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003047 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.79 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.ArgumentOutOfRangeException: Length cannot be less than zero.
+Parameter name: length
+  at System.String.Substring (System.Int32 startIndex, System.Int32 length) [0x0004a] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at Cinemachine.Editor.ScriptableObjectUtility.get_CinemachineInstallAssetPath () [0x00016] in K:\Unity Project\Living_Room_HDRP_Lighting_Final\Assets\Cinemachine\Base\Editor\Utility\ScriptableObjectUtility.cs:23 
+  at Cinemachine.Editor.ScriptableObjectUtility.get_CinemachineInstallPath () [0x00000] in K:\Unity Project\Living_Room_HDRP_Lighting_Final\Assets\Cinemachine\Base\Editor\Utility\ScriptableObjectUtility.cs:13 
+  at Cinemachine.Editor.CinemachineBrainEditor+InstallGizmos..cctor () [0x00000] in K:\Unity Project\Living_Room_HDRP_Lighting_Final\Assets\Cinemachine\Base\Editor\Editors\CinemachineBrainEditor.cs:150 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.698 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3698ms)
+		BeginReloadAssembly (135ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (3483ms)
+			LoadAssemblies (103ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (585ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (122ms)
+			SetupLoadedEditorAssemblies (2437ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (122ms)
+				ProcessInitializeOnLoadAttributes (2283ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (26ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.44 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3494 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 166.4 MB.
+System memory in use after: 162.2 MB.
+
+Unloading 48 unused Assets to reduce memory usage. Loaded Objects now: 4163.
+Total: 9.763500 ms (FindLiveObjects: 0.726700 ms CreateObjectMapping: 0.193500 ms MarkObjects: 5.080700 ms  DeleteObjects: 3.760000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 397.051968 seconds.
+  path: Assets/Cam Controlles.playable
+  artifactKey: Guid(0776bd245c4664145a5833ff2762eece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cam Controlles.playable using Guid(0776bd245c4664145a5833ff2762eece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a56626c8cb8bec20f6eb50e80e1876b') in 0.049158 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000376 seconds.
+  path: Assets/snowy_park_01_4k.hdr
+  artifactKey: Guid(e953946071b93084981b67ad3b817a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/snowy_park_01_4k.hdr using Guid(e953946071b93084981b67ad3b817a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76e939e960269a50e477794d06fbb89c') in 0.202132 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.802633 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(04f9197b881f82147b5b3156c7eb068e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(04f9197b881f82147b5b3156c7eb068e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fab2c7ac76f3d0446b54cb87050c12b') in 0.001669 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.131144 seconds.
+  path: Assets/Scenes/Day Scene.unity
+  artifactKey: Guid(f1a59b6c9e9d38a42be8f3575010f61d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Day Scene.unity using Guid(f1a59b6c9e9d38a42be8f3575010f61d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5a4978637fae10f0dff20a21623825e') in 0.002699 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
